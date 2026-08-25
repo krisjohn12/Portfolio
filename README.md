@@ -1,4 +1,4 @@
-# Portfolio — Alex Rivera
+# Portfolio — Kris-John Martinez
 
 A static personal portfolio site built with plain **HTML, CSS, and JavaScript**.
 The design uses a code-editor / IDE motif — the nav is styled as file tabs
