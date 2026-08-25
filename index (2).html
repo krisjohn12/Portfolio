@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex Rivera — Web Developer</title>
+<meta name="description" content="Portfolio of Alex Rivera, front-end web developer working with HTML, CSS, JavaScript and PHP.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= EDITOR CHROME / NAV ================= -->
+<header class="titlebar">
+  <div class="titlebar-dots" aria-hidden="true">
+    <span class="dot dot-red"></span>
+    <span class="dot dot-yellow"></span>
+    <span class="dot dot-green"></span>
+  </div>
+  <span class="titlebar-path">alex-rivera — portfolio — VS Code</span>
+</header>
+
+<nav class="tabbar" aria-label="Section navigation">
+  <a href="#hero" class="tab is-active" data-tab="hero">
+    <span class="tab-icon icon-js">JS</span> hero.js
+  </a>
+  <a href="#tools" class="tab" data-tab="tools">
+    <span class="tab-icon icon-css">CSS</span> tools.css
+  </a>
+  <a href="#projects" class="tab" data-tab="projects">
+    <span class="tab-icon icon-html">&lt;/&gt;</span> projects.html
+  </a>
+  <a href="#contact" class="tab" data-tab="contact">
+    <span class="tab-icon icon-php">PHP</span> contact.php
+  </a>
+</nav>
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section id="hero" class="section hero">
+  <div class="gutter" aria-hidden="true">
+    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+    <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+  </div>
+
+  <div class="code-pane">
+    <p class="code-line"><span class="tok-comment">// hero.js — say hello</span></p>
+    <p class="code-line"><span class="tok-key">const</span> <span class="tok-var">developer</span> <span class="tok-op">=</span> {</p>
+    <p class="code-line code-indent"><span class="tok-prop">name:</span> <span class="tok-str">"Alex Rivera"</span>,</p>
+    <p class="code-line code-indent"><span class="tok-prop">role:</span> <span class="tok-str">"<span id="typedRole">Front-End Developer</span><span class="cursor">▌</span></span>,</p>
+    <p class="code-line code-indent"><span class="tok-prop">basedIn:</span> <span class="tok-str">"Building for the web"</span>,</p>
+    <p class="code-line code-indent"><span class="tok-prop">stack:</span> [<span class="tok-str">"HTML"</span>, <span class="tok-str">"CSS"</span>, <span class="tok-str">"JavaScript"</span>, <span class="tok-str">"PHP"</span>],</p>
+    <p class="code-line">};</p>
+    <p class="code-line">&nbsp;</p>
+    <p class="code-line"><span class="tok-fn">render</span>(developer);</p>
+
+    <p class="hero-blurb">
+      I turn ideas into fast, clean, accessible interfaces — then wire them up to
+      real logic on the back end when a page needs to do more than just look good.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">
+        <span class="prompt">$</span> view --projects
+      </a>
+      <a href="#contact" class="btn btn-ghost">
+        <span class="prompt">$</span> get --in-touch
+      </a>
+    </div>
+  </div>
+
+  <p class="scroll-hint" aria-hidden="true">scroll <span class="scroll-arrow">↓</span></p>
+</section>
+
+<!-- ================= TOOLS ================= -->
+<section id="tools" class="section tools">
+  <p class="section-eyebrow">tools.css</p>
+  <h2 class="section-title">What I build with</h2>
+  <p class="section-sub">Four languages, one workflow: structure, style, behavior, and the logic that connects them.</p>
+
+  <div class="tool-grid">
+
+    <article class="tool-card">
+      <div class="tool-head">
+        <span class="tool-icon icon-html">&lt;/&gt;</span>
+        <h3>HTML</h3>
+      </div>
+      <p class="tool-desc">Semantic markup that stays readable and accessible before a single style is applied.</p>
+      <div class="meter" role="img" aria-label="HTML proficiency: advanced">
+        <span class="meter-fill fill-html"></span>
+      </div>
+      <p class="meter-label"><span class="prompt">//</span> advanced</p>
+    </article>
+
+    <article class="tool-card">
+      <div class="tool-head">
+        <span class="tool-icon icon-css">#</span>
+        <h3>CSS</h3>
+      </div>
+      <p class="tool-desc">Layout systems, responsive design, and the small transitions that make an interface feel alive.</p>
+      <div class="meter" role="img" aria-label="CSS proficiency: advanced">
+        <span class="meter-fill fill-css"></span>
+      </div>
+      <p class="meter-label"><span class="prompt">//</span> advanced</p>
+    </article>
+
+    <article class="tool-card">
+      <div class="tool-head">
+        <span class="tool-icon icon-js">{}</span>
+        <h3>JavaScript</h3>
+      </div>
+      <p class="tool-desc">DOM manipulation, fetch calls, and interactive components built without unnecessary weight.</p>
+      <div class="meter" role="img" aria-label="JavaScript proficiency: intermediate to advanced">
+        <span class="meter-fill fill-js"></span>
+      </div>
+      <p class="meter-label"><span class="prompt">//</span> intermediate&ndash;advanced</p>
+    </article>
+
+    <article class="tool-card">
+      <div class="tool-head">
+        <span class="tool-icon icon-php">&lt;?&gt;</span>
+        <h3>PHP</h3>
+      </div>
+      <p class="tool-desc">Server-side logic, form handling, and simple database-backed features.</p>
+      <div class="meter" role="img" aria-label="PHP proficiency: intermediate">
+        <span class="meter-fill fill-php"></span>
+      </div>
+      <p class="meter-label"><span class="prompt">//</span> intermediate</p>
+    </article>
+
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="section projects">
+  <p class="section-eyebrow">projects.html</p>
+  <h2 class="section-title">Projects</h2>
+  <p class="section-sub">Two open files, waiting to be written. Replace these cards with real work as it ships.</p>
+
+  <div class="project-grid">
+
+    <article class="project-card is-empty">
+      <div class="project-file-tab">
+        <span class="tool-icon icon-html">&lt;/&gt;</span> project-01.md
+      </div>
+      <div class="project-body">
+        <span class="project-status">untitled — no commits yet</span>
+        <h3 class="project-title">Project One</h3>
+        <p class="project-desc">A short description of the problem this project solves and how you solved it goes here.</p>
+        <ul class="project-meta">
+          <li><span class="meta-label">Stack</span><span class="meta-value">—</span></li>
+          <li><span class="meta-label">Role</span><span class="meta-value">—</span></li>
+        </ul>
+        <div class="project-links">
+          <a href="#" class="btn btn-ghost btn-sm" aria-disabled="true">Live demo</a>
+          <a href="#" class="btn btn-ghost btn-sm" aria-disabled="true">Source</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card is-empty">
+      <div class="project-file-tab">
+        <span class="tool-icon icon-html">&lt;/&gt;</span> project-02.md
+      </div>
+      <div class="project-body">
+        <span class="project-status">untitled — no commits yet</span>
+        <h3 class="project-title">Project Two</h3>
+        <p class="project-desc">A short description of the problem this project solves and how you solved it goes here.</p>
+        <ul class="project-meta">
+          <li><span class="meta-label">Stack</span><span class="meta-value">—</span></li>
+          <li><span class="meta-label">Role</span><span class="meta-value">—</span></li>
+        </ul>
+        <div class="project-links">
+          <a href="#" class="btn btn-ghost btn-sm" aria-disabled="true">Live demo</a>
+          <a href="#" class="btn btn-ghost btn-sm" aria-disabled="true">Source</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section contact">
+  <p class="section-eyebrow">contact.php</p>
+  <h2 class="section-title">Let's talk</h2>
+  <p class="section-sub">Send a message below — or reach out directly through email or socials.</p>
+
+  <div class="contact-wrap">
+
+    <div class="terminal">
+      <div class="terminal-head">
+        <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+        <span class="terminal-title">contact — bash</span>
+      </div>
+      <form id="contactForm" class="terminal-body" novalidate>
+        <label class="term-line" for="name">
+          <span class="prompt">$</span> whoami
+        </label>
+        <input class="term-input" type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label class="term-line" for="email">
+          <span class="prompt">$</span> set --reply-to
+        </label>
+        <input class="term-input" type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label class="term-line" for="message">
+          <span class="prompt">$</span> echo "message"
+        </label>
+        <textarea class="term-input" id="message" name="message" rows="4" placeholder="What's the project?" required></textarea>
+
+        <button type="submit" class="btn btn-primary btn-full">
+          <span class="prompt">$</span> ./send.sh
+        </button>
+        <p class="term-response" id="formResponse" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+
+    <ul class="contact-links">
+      <li>
+        <a href="mailto:alex.rivera@example.com">
+          <span class="meta-label">email</span>
+          <span class="meta-value">alex.rivera@example.com</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+          <span class="meta-label">github</span>
+          <span class="meta-value">github.com/your-username</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+          <span class="meta-label">linkedin</span>
+          <span class="meta-value">linkedin.com/in/your-name</span>
+        </a>
+      </li>
+    </ul>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Alex Rivera. Built with HTML, CSS &amp; JavaScript.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
